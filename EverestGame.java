@@ -66,7 +66,7 @@ public class EverestGame {
             if(!diceValues.contains(x)) diceValues.addElement(x);
         }
 
-        if((faceValues[0] + faceValues[1] + faceValues[2]) < 12){
+        if((faceValues[0] + faceValues[1] + faceValues[2]) <= 12){
             diceValues.addElement((faceValues[0] + faceValues[1] + faceValues[2]));
         }
         System.out.print("These are the values that you can eliminate: ");

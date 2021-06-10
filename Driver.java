@@ -42,7 +42,7 @@ public class Driver {
                     }
                 }while(cont == 0);
             }else{
-                System.out.println("Not playable");
+                System.out.println("Sorry! You cannot play any values this round!");
             }
 
             // check if anyone has won before proceeding to next round

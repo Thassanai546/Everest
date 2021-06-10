@@ -4,8 +4,7 @@ import java.util.Arrays;
 
 public class Player {
     private String name;
-    //private int[] scoreCard = {1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12};
-    private int[] scoreCard = {1,2,3};
+    private int[] scoreCard = {1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12};
 
     public Player(String name){
         this.name = name;
@@ -36,14 +35,14 @@ public class Player {
     }
 
     public String printScoreCard(){
-        String formattedCard = "\n===" + this.name + "===================\n";
+        String formattedCard = "\n==========================\n";
         for(int x:this.scoreCard){
             formattedCard += x + " ";
             if(x == 12){
                 formattedCard += "\n";
             }
         }
-        formattedCard += "\n==========================";
+        formattedCard += "==========================";
         return formattedCard;
     }
 
