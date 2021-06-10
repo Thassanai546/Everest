@@ -6,17 +6,7 @@ import java.util.Vector;
 public class EverestGame {
 
     int[] faceValues = new int[3];  // values of the dice
-    Vector diceValues = new Vector(); // initial capacity = 10
-
-    public boolean find(int[] arr, int target){
-        // if value exists in array return true else return false
-        for (int x: arr) {
-            if (x == target) {
-                return true; // breaks loop
-            }
-        }
-        return false;
-    }
+    Vector diceValues = new Vector(); // vector of values that a user can select
 
     public boolean validChoice(int choice){
         // did the user enter a playable value?
@@ -57,22 +47,24 @@ public class EverestGame {
             for(int y=0;y<3;y++){
                 sum = faceValues[i] + faceValues[y];
                 if(i!=y && !diceValues.contains(sum)){
-                    //cannot add dice to itself + removing duplicates
+                    // i!=y as we cannot add dice to itself, we also remove duplicates here
                     diceValues.addElement(sum);
                 }
             }
         }
+        // the resulting sums are now in our vector, here we add the face values of the dice
         for(int x: faceValues){
             if(!diceValues.contains(x)) diceValues.addElement(x);
         }
 
+        // the player cannot remove a value greater than 12
         if((faceValues[0] + faceValues[1] + faceValues[2]) <= 12){
             diceValues.addElement((faceValues[0] + faceValues[1] + faceValues[2]));
         }
         System.out.print("These are the values that you can eliminate: ");
-        Collections.sort(diceValues);
+        Collections.sort(diceValues); // sort from lowest to highest before outputting
         System.out.println(diceValues);
-    } // end method
+    }
 
     public void strikeValue(Player p, int choice){
 
@@ -85,8 +77,8 @@ public class EverestGame {
             }
         }
         p.setScoreCard(scoreCard);
-        System.out.println(p.getName() + " got rid of " + choice + " their scorecard is now :");
-        System.out.println(p.printScoreCard());
+        System.out.print(p.getName() + " got rid of " + choice + " their scorecard is now:" + p.printScoreCard() + "\n");
+
     }
 
     public int checkWin(Player p){

@@ -35,6 +35,7 @@ public class Player {
     }
 
     public String printScoreCard(){
+        // prints a nice looking scorecard similar to a real scorecard from the game
         String formattedCard = "\n==========================\n";
         for(int x:this.scoreCard){
             formattedCard += x + " ";
