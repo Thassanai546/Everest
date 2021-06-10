@@ -12,7 +12,7 @@ A) 2\
 B) 3\
 C) 5\
 D) 7 (5+2)\
-E) 8 (5+3)\
+E) 8 (5+3)
 
 The player who crosses off all twenty-four numbers first, wins the game.
 
