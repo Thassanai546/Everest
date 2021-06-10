@@ -8,11 +8,11 @@ Each player in turn throws three dice and crosses off any values, using either r
 
 Lets say we roll 3 dice and get 2, 3, 5
 The values that we can remove are:
-A) 2
-B) 3
-C) 5
-D) 7 (5+2)
-E) 8 (5+3)
+A) 2\
+B) 3\
+C) 5\
+D) 7 (5+2)\
+E) 8 (5+3)\
 
 The player who crosses off all twenty-four numbers first, wins the game.
 
