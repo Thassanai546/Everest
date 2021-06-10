@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Player {
     private String name;
     //private int[] scoreCard = {1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11,12};
-    private int[] scoreCard = {1,2,3,4,5};
+    private int[] scoreCard = {1,2,3};
 
     public Player(String name){
         this.name = name;
@@ -43,7 +43,7 @@ public class Player {
                 formattedCard += "\n";
             }
         }
-        formattedCard += "==========================";
+        formattedCard += "\n==========================";
         return formattedCard;
     }
 

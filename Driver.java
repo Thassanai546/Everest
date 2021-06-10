@@ -45,9 +45,13 @@ public class Driver {
                 System.out.println("Not playable");
             }
 
+            // check if anyone has won before proceeding to next round
+            if(myGame.checkWin(currentPlayer) > 0){
+                endGame = 1;
+            }
+
 
             // temporary player swap
-
             if(currentPlayer == p1){
                 currentPlayer = p2;
             }else{
@@ -55,6 +59,8 @@ public class Driver {
             }
 
         }while(endGame == 0);
+
+        System.out.println("Game has ended.");
 
     }
 }

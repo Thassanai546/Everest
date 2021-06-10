@@ -51,6 +51,7 @@ public class EverestGame {
 
     public void getSums(){
         int sum;
+        diceValues.clear(); // clear vector for new dice values
         // get possible sums from dice values
         for(int i=0;i<3;i++){
             for(int y=0;y<3;y++){
