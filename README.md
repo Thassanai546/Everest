@@ -1,5 +1,5 @@
 # Everest
-The dice game Everest aka Matterhorn in Java CLI. (w.i.p)
+The dice game Everest aka Matterhorn in Java CLI.
 
 ## Rules
 http://www.dice-play.com/Games/Everest.htm
