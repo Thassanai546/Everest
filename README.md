@@ -1,5 +1,6 @@
 # Everest
 The dice game Everest aka Matterhorn in Java CLI.
+In this game players race to strike off all values on their scorecard. An example of what this card may look like is shown below. Normally all you need to play is quick mental maths and good luck, however thanks to java all you need here is good luck.
 
 ## Rules
 http://www.dice-play.com/Games/Everest.htm
