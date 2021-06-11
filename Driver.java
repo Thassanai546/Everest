@@ -22,14 +22,12 @@ public class Driver {
         do{
             System.out.println("\nIt is currently " + currentPlayer.getName() + "'s turn."  + currentPlayer.printScoreCard());
             myGame.roll3();
-
             // if player can remove a value this round
             if(myGame.playRound(currentPlayer)){
                 do{
                     System.out.println("Enter value to strike");
                     chosenValue = in.nextInt();
                     proceed = 0; // reset continue status
-
                     // if your chosenValue is in results or dice values
                     if(myGame.validChoice(chosenValue)){
                         myGame.strikeValue(currentPlayer,chosenValue); // update the scorecard
@@ -47,7 +45,6 @@ public class Driver {
                 endGame = 1;
             }
 
-
             // temporary player swap
             if(currentPlayer == p1){
                 currentPlayer = p2;
@@ -56,8 +53,7 @@ public class Driver {
             }
 
         }while(endGame == 0);
-
         System.out.println("Game has ended.");
-
     }
+
 }
