@@ -28,8 +28,8 @@ public class Driver {
                     System.out.println("Enter value to strike");
                     chosenValue = in.nextInt();
                     proceed = 0; // reset continue status
-                    // if your chosenValue is in results or dice values
-                    if(myGame.validChoice(chosenValue)){
+                    
+                    if(myGame.validChoice(chosenValue)){ // if your chosenValue is in results or dice values
                         myGame.strikeValue(currentPlayer,chosenValue); // update the scorecard
                         proceed = 1;
                     }else{
@@ -54,6 +54,7 @@ public class Driver {
 
         }while(endGame == 0);
         System.out.println("Game has ended.");
+        in.close();
     }
 
 }

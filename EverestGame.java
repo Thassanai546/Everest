@@ -31,6 +31,8 @@ public class EverestGame {
     }
 
     public boolean playRound(Player p){
+        // A player will have to skip a turn if they roll and 
+        // no values on their scorecard can be removed
         for(int x: p.getScoreCard()){
             if(diceValues.contains(x)){
                 return true;
